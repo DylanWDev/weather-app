@@ -69,18 +69,18 @@
 
 ## adding html to page
 
-- function to generate html on page
-- onclick to fill information on page
+- createElement to add html
+- add container div
+- add div for each section
+- style with bootstrap
 
 # import axios library
 
 # function to fetch weather data
 
-- if request is successful return value of what i called
-- else add error message in display box
-
-#
+- try catch to send back error if zip is invalid
 
 # eventListeners
 
--
+- add listener for get weather
+- create function to fill info with button if valid zip is entered

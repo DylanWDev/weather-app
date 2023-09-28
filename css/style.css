@@ -1,5 +1,30 @@
-#testBtn {
-  background-color: aqua;
-  width: 100px;
-  height: 100px;
+
+.container {
+  padding: 15px;
+  border: dotted 3px black;
 }
+
+#testBtn, #input {
+  margin: 15px;
+}
+
+#testBtn {
+  background-color: #62ecec;
+  margin-left: 20px;
+}
+
+#input {
+  width: 100px;
+  text-align: center;
+  border: solid 2px;
+}
+
+#cityDiv {
+  display: block;
+  border: solid 2px;
+}
+
+#cityName, #tempK, #tempC{
+  height: 50px;
+}
+
