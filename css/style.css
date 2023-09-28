@@ -24,7 +24,7 @@
   border: solid 2px;
 }
 
-#cityName {
+#cityName, #tempK, #tempC{
   height: 50px;
 }
 
