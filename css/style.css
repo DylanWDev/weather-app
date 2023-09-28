@@ -1,5 +1,51 @@
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: 15px;
+  border: dotted 3px black;
+}
+
+#topDiv {
+  display: flex;
+  justify-content: center;
+}
+
+#testBtn, #input {
+  margin: 15px;
+}
+
 #testBtn {
-  background-color: aqua;
+  background-color: #62ecec;
+  margin-left: 20px;
+}
+
+#input {
   width: 100px;
-  height: 100px;
+  text-align: center;
+  border: solid 2px;
+}
+
+#cityDiv {
+  display: block;
+  border: solid 2px;
+}
+
+#city, #cityName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+#city {
+  
+  border-bottom: solid 1px;
+  background: orange;
+}
+
+#cityName {
+  height: 50px;
 }
