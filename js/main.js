@@ -161,10 +161,11 @@ otherName.id = "otherName"; // Use a unique ID
 otherName.classList = "d-flex justify-content-center mb-0 border-bottom border-dark bg-info";
 otherDiv.appendChild(otherName);
 
-let otherFill = document.createElement("p");
+let otherFill = document.createElement("img");
 otherFill.id = "otherFill";
-otherFill.classList = "d-flex justify-content-center mb-0 align-items-center";
+otherFill.classList = "d-block mx-auto";
 otherDiv.appendChild(otherFill);
+otherFill.src = "https://openweathermap.org/img/wn/@2x.png"
 //* image
 
 
@@ -175,7 +176,7 @@ async function init() {
     try {
         const api_url = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode},us&appid=${apiKey}`;
         const result = await axios.get(api_url);
-        console.log(result.data.main.temp)
+        console.log(result.data)
         console.log(result.data.name);
         if (result) {
             fillCity(result.data.name);
@@ -201,6 +202,13 @@ async function init() {
         }
         fillCondition()
         
+        //* function to populate other info
+        function fillIcon(){
+            console.log(result.data.weather[0].icon)
+            // otherFill.src = result.data.weather[0].icon
+            otherFill.src = `https://openweathermap.org/img/wn/${result.data.weather[0].icon}@2x.png`
+        }
+        fillIcon()
         
         
     } catch (error) {
