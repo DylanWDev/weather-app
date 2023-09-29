@@ -24,7 +24,11 @@
   border: solid 2px;
 }
 
-#cityName, #tempK, #tempC{
+#cityName, #tempK, #tempC, #conditionFill{
   height: 50px;
+}
+
+#otherFill {
+  height: 250px;
 }
 
