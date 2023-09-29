@@ -165,7 +165,6 @@ let otherFill = document.createElement("img");
 otherFill.id = "otherFill";
 otherFill.classList = "d-block mx-auto";
 otherDiv.appendChild(otherFill);
-otherFill.src = "https://openweathermap.org/img/wn/@2x.png"
 //* image
 
 
