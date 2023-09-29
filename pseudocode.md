@@ -55,7 +55,7 @@
 - call api
 - pick out information from api
 
----
+<-------------------------->
 
 # pseudocode
 
@@ -84,3 +84,10 @@
 
 - add listener for get weather
 - create function to fill info with button if valid zip is entered
+
+#
+
+# conversion
+
+- K to F
+- K to C
